@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.netology.data.UserRegistrationData;
 import ru.netology.data.UserRegistrationDataGenerator;
 
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;

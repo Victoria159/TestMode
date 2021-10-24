@@ -55,7 +55,7 @@ public class  UserRegistrationDataGenerator {
         return userData;
     }
 
-    public static UserRegistrationData generateInvalidPassword() {
+    public static UserRegistrationData generateInvalidLogin() {
         String password = faker.internet().password(true);
         UserRegistrationData userDataRegistration = new UserRegistrationData(faker.name().username(),
                 password, activeStatus);
@@ -64,7 +64,7 @@ public class  UserRegistrationDataGenerator {
                 password, activeStatus);
     }
 
-    public static UserRegistrationData generateInvalidLogin() {
+    public static UserRegistrationData generateInvalidPassword() {
         String login = faker.name().username();
         UserRegistrationData userDataRegistration = new UserRegistrationData(login,
                 faker.internet().password(true), activeStatus);
