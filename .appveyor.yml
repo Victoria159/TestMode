@@ -11,7 +11,7 @@ build: off  # будем использовать свой скрипт сбор
 install:
   #Запускаем SUT
   - chmod +x gradlew
-  - java -jar ./artifacts/app-ibank.jar &
+  - java -jar app-ibank.jar -P:profile=test &
 
 
 build_script:
